@@ -1,0 +1,192 @@
+/* Ecraser style */
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a,p,h1,h2,h3,h4,h5,h6,strong,li{
+	font-family: 'Raleway', sans-serif !important;
+}
+
+/* Bg partie paire */
+.bg-beige{
+	background-color: #AE8964;
+}
+
+.bg-brun{
+	background-color: #89725B;
+}
+
+/* Titres qui s'adaptent à la résolution de l'écran */
+
+.title{
+	font-size: 3rem;
+}
+
+/* put margin top 60 */
+.margin-top70{
+	margin-top: 70px;
+}
+
+section{
+	padding : 4rem 0;
+}
+
+section.paire hr{
+	max-width: 50px;
+	border-width: 3px;
+	border-color: #7E5835;
+}
+
+section.impaire hr{
+	max-width: 50px;
+	border-width: 3px;
+	border-color: #7E5835;
+}
+
+/* Part menu */
+
+.menu .navbar-brand{
+
+font-weight: bold;
+font-size: 2em;
+letter-spacing: 1px;
+color: #7E5835;
+}
+
+.menu .navbar-brand:hover{
+color:#DEB887 !important;
+}
+
+.menu .nav-link{
+	font-size: 1.25em;
+	color: white !important;
+}
+
+.menu .nav-link:hover{
+	color:#DEB887 !important ;
+}
+
+/*End of menu */
+
+/*partie présentation */
+
+header.presentation{
+	background: url("../images/bg.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+header hr{
+	max-width: 50px;
+	border-width: 3px;
+	border-color: #FFEBCD;
+}
+
+/* End of partie présentation */
+
+
+/*Part experiences */
+
+ul.task-experience{
+	padding-left: 0;
+	list-style: circle;
+	list-style-position: inside;
+}
+
+/* End of experiences */
+
+/*Part competences */
+
+.each-competence{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
+}
+
+.each-competence-text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/* End of competences */
+
+/* Part project */
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+    }
+
+    .portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+/* End of project */
+
+/* Part contact */
+
+#contact i{
+	font-size: 5em;
+}
+
+#contact a,.mobile{
+	color: rgba(0,0,0,1);
+	font-size: 1.25em;
+}
+
+#contact a:hover{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+
+/* End of contact */
+
+/*Media queries */
+@media screen and (max-width: 992px) {
+
+	#mainNav{
+		background-color: #AE8964 !important;
+	}
+
+	.title{
+		font-size : 2rem;
+	}
+
+	.text-experience{
+		margin: 20px 0;
+	}
+
+}
