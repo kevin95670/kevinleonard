@@ -9,7 +9,6 @@
   <meta name="description"  content="Passionné de développement web et de la création de sites, je souhaiterai m'investir pour l'avenir au titre de développeur front-end ">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link rel="icon" href="images/logo.ico" type="image/ico" />
   <title>Kevin LEONARD</title>
@@ -63,7 +62,7 @@
       </div>
     </header>
 
-    <section class="bg-beige paire" id="experiences">
+    <section class="bg-beige paire lazy" id="experiences">
       <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto text-center">
@@ -73,7 +72,7 @@
         </div>
         <div class="row my-5">
           <div class="col-md-4 text-center my-auto">
-            <img src="images/webcom.png" width="150" height="150" alt="Agence Webcom"/>
+            <img data-src="images/webcom.png" class="big-image" alt="Agence Webcom"/>
           </div>
           <div class="col-md-8 text-experience">
             <h3>Intégrateur - développeur</h3>
@@ -87,7 +86,7 @@
         </div>
         <div class="row my-5">
           <div class="col-md-4 text-center my-auto">
-            <img src="images/exacompta.png" width="100" height="auto" alt="Exacompta"/>
+            <img data-src="images/exacompta.png" alt="Exacompta"/>
           </div>
           <div class="col-md-8 text-experience">
             <h3>Intégrateur - développeur</h3>
@@ -101,7 +100,7 @@
         </div>
         <div class="row my-5">
           <div class="col-md-4 text-center my-auto">
-            <img src="images/Pelopia.jpg" width="100" height="auto" alt="pelopia"/>
+            <img data-src="images/Pelopia.jpg" alt="pelopia"/>
           </div>
           <div class="col-md-8 text-experience">
             <h3> Développeur front-end</h3>
@@ -114,7 +113,7 @@
         </div>
         <div class="row my-5">
           <div class="col-md-4 text-center my-auto">
-            <img src="images/Ecurie.png" width="200" height="auto" alt="Ecurie production"/>
+            <img data-src="images/Ecurie.png" class="big-image" alt="Ecurie production"/>
           </div>
           <div class="col-md-8 text-experience">
             <h3> Développeur web</h3>
@@ -129,7 +128,7 @@
           </div>
           <div class="row my-5">
             <div class="col-md-4 text-center my-auto">
-              <img src="images/alfredo.png" width="100" height="100" alt="alfredo"/>
+              <img data-src="images/alfredo.png" alt="alfredo"/>
             </div>
             <div class="col-md-8 text-experience">
               <h3> Développeur front-end</h3>
@@ -145,7 +144,7 @@
         </div>
       </section>
 
-      <section id="competences" class="bg-brun impaire">
+      <section id="competences" class="bg-brun impaire lazy">
         <div class="container">
           <div class="row">
             <div class="col-md-10 mx-auto text-center">
@@ -159,7 +158,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/html5.png" alt="html"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/html5.png" alt="html"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">HTML</h5>
                     <div class="progress">
@@ -172,7 +171,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/css.png" alt="css"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/css.png" alt="css"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">CSS</h5>
                     <div class="progress">
@@ -185,7 +184,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/sass.png" alt="sass"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/sass.png" alt="sass"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">SASS</h5>
                     <div class="progress">
@@ -198,7 +197,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/js.png" alt="JS"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/js.png" alt="JS"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">JavaScript/jQuery</h5>
                     <div class="progress">
@@ -211,7 +210,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/php.png" alt="php"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/php.png" alt="php"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">PHP</h5>
                     <div class="progress">
@@ -224,7 +223,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/mysql.png" alt="mysql"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/mysql.png" alt="mysql"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">MySQL</h5>
                     <div class="progress">
@@ -237,7 +236,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/bootstrap.png" alt="bootstrap"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/bootstrap.png" alt="bootstrap"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Bootstrap</h5>
                     <div class="progress">
@@ -250,7 +249,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/wordpress.png" alt="wordpress"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/wordpress.png" alt="wordpress"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Wordpress</h5>
                     <div class="progress">
@@ -263,7 +262,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/magento.png" alt="Magento"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/magento.png" alt="Magento"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Magento</h5>
                     <div class="progress">
@@ -276,7 +275,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/symfony.png" alt="Symfony"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/symfony.png" alt="Symfony"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Symfony</h5>
                     <div class="progress">
@@ -289,7 +288,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/laravel.png" alt="Laravel"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/laravel.png" alt="Laravel"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Laravel</h5>
                     <div class="progress">
@@ -302,7 +301,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/vue.png" alt="Vue.js"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/vue.png" alt="Vue.js"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Vue.js</h5>
                     <div class="progress">
@@ -315,7 +314,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/photoshop.png" alt="photoshop"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/photoshop.png" alt="photoshop"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Photoshop</h5>
                     <div class="progress">
@@ -328,7 +327,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/java.png" alt="Java"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/java.png" alt="Java"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Java</h5>
                     <div class="progress">
@@ -341,7 +340,7 @@
             <div class="col-lg-4 col-sm-6 text-center">
               <div class=" mt-5 mx-auto">
                 <div class="each-competence">
-                  <img class="align-self-center mr-3 img-fluid" src="images/android.png" alt="android"/>
+                  <img class="align-self-center mr-3 img-fluid" data-src="images/android.png" alt="android"/>
                   <div class="each-competence-text">
                     <h5 class="text-left font-weight-bold">Android</h5>
                     <div class="progress">
@@ -355,7 +354,7 @@
         </div>
       </section>
 
-      <section class=" bg-beige paire pb-0" id="projets">
+      <section class=" bg-beige paire pb-0 lazy" id="projets">
         <div class="container-fluid px-0">
           <div class="row no-gutters">
             <div class="col-md-10 mx-auto text-center">
@@ -366,7 +365,7 @@
           <div class="row no-gutters mt-5">
             <div class="col-md-4">
               <a class="portfolio-box" href="https://actvty.000webhostapp.com/Projet/index.php">
-                <img class="img-fluid" src="images/actvty.png" alt="actvty"/>
+                <img class="img-fluid" data-src="images/actvty.png" alt="actvty"/>
                 <div class="portfolio-box-caption">
                   <div class="portfolio-box-caption-content">
                     <div class="project-name">
@@ -381,7 +380,7 @@
             </div>
             <div class="col-md-4">
               <a class="portfolio-box" href="https://lpconseilsecurite.fr/">
-                <img class="img-fluid" src="images/LPConseilSecurite.png" alt="LPConseilSecurite"/>
+                <img class="img-fluid" data-src="images/LPConseilSecurite.png" alt="LPConseilSecurite"/>
                 <div class="portfolio-box-caption">
                   <div class="portfolio-box-caption-content">
                     <div class="project-name">
@@ -396,7 +395,7 @@
             </div>
             <div class="col-md-4">
               <a class="portfolio-box no-click" href="#">
-                <img class="img-fluid" src="images/progress.png" alt="Leader Logistic"/>
+                <img class="img-fluid" data-src="images/progress.png" alt="Leader Logistic"/>
                 <div class="portfolio-box-caption">
                   <div class="portfolio-box-caption-content">
                     <div class="project-name">
@@ -433,7 +432,7 @@
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fab fa-linkedin"></i>
-            <p class="mt-1"><a href="https://www.linkedin.com/in/kevin-leonard95670/">kevin-leonard95670</a></p>
+            <p class="mt-1"><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kevin-leonard95670/">kevin-leonard95670</a></p>
           </div>
         </div>
       </div>
