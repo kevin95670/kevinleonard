@@ -42,9 +42,9 @@ $(document).ready(function() {
   });
 }
 
-$('.no-click').on('click',function(e){
+/*$('.no-click').on('click',function(e){
   e.preventDefault();
-});
+});*/
 
 
 var win = $(window);

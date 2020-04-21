@@ -2,7 +2,7 @@
 font-family: 'Raleway';
     src: url('../fonts/Raleway-Regular.eot');
     src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Regular.woff') format('woff');
+        url('../fonts/Raleway-Regular.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 }
@@ -135,9 +135,35 @@ align-items: flex-start;
     flex: 1;
 }
 
+.progress-very-high{
+	width: 90%;
+}
+
+.progress-medium-high{
+	width: 60%;
+}
+
+.progress-high{
+	width: 75%;
+}
+
+.progress-medium{
+	width: 50%;
+}
+
+.progress-low{
+	width: 35%;
+}
+
 /* End of competences */
 
 /* Part project */
+
+.img-wrapper{
+	max-height: 475px;
+	overflow: hidden;
+}
+
 .portfolio-box {
     position: relative;
     display: block;
