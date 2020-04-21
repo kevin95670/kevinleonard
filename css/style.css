@@ -17,8 +17,8 @@ body {
 	padding: 0;
 }
 
-a,p,h1,h2,h3,h4,h5,h6,strong,li{
-	font-family: 'Raleway', sans-serif !important;
+a,p,h1,h2,h3,h4,h5,h6,strong,li,em{
+	font-family: 'Raleway', sans-serif;
 }
 
 /* Bg partie paire */
@@ -67,17 +67,17 @@ letter-spacing: 1px;
 color: #7E5835;
 }
 
-.menu .navbar-brand:hover{
-color:#DEB887 !important;
+.menu div a.navbar-brand:hover{
+	color:#DEB887;
 }
 
-.menu .nav-link{
+.menu div a.nav-link{
 	font-size: 1.25em;
-	color: white !important;
+	color: white;
 }
 
-.menu .nav-link:hover{
-	color:#DEB887 !important ;
+.menu div a.nav-link:hover{
+	color:#DEB887;
 }
 
 /*End of menu */
@@ -122,12 +122,12 @@ ul.task-experience{
 /*Part competences */
 
 .each-competence{
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-align: start;
--ms-flex-align: start;
-align-items: flex-start;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 }
 
 .each-competence-text {
@@ -223,7 +223,7 @@ align-items: flex-start;
 /*Media queries */
 @media screen and (max-width: 992px) {
 
-	#mainNav{
+	nav.navbar{
 		background-color: #AE8964 !important;
 	}
 
