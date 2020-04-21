@@ -71,21 +71,21 @@ function changeColorMenu()
   //if(scroll_start > offset.top) {
   if(scroll_start > 0) {
     $(".navbar").css('background-color', '#AE8964');
-    $('.menu div a').attr('style', 'color:#7E5835');
-    $('.menu div a').mouseenter(function(){
+    $('.menu a').attr('style', 'color:#7E5835');
+    $('.menu a').mouseenter(function(){
       $(this).attr('style', 'color:white');
     });
-    $('.menu div a').mouseout(function(){
+    $('.menu a').mouseout(function(){
       $(this).attr('style', 'color:#7E5835');
     });
 
   } else {
     $('.navbar').css('background-color', 'transparent');
-    $('.menu div a').attr('style', 'color: white');
-    $('.menu div a').mouseenter(function(){
+    $('.menu a').attr('style', 'color: white');
+    $('.menu a').mouseenter(function(){
       $(this).attr('style', 'color:#DEB887');
     });
-    $('.menu div a').mouseout(function(){
+    $('.menu a').mouseout(function(){
       $(this).attr('style', 'color:white');
     });
   }
