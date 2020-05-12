@@ -170,9 +170,14 @@ ul.task-experience{
     display: block;
     max-width: 650px;
     margin: 0 auto;
-    }
+}
 
-    .portfolio-box .portfolio-box-caption {
+.portfolio-box .project-name{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.portfolio-box .portfolio-box-caption {
     position: absolute;
     bottom: 0;
     display: block;
@@ -191,6 +196,7 @@ ul.task-experience{
     position: absolute;
     top: 50%;
     width: 100%;
+    padding: 0 15px;
     transform: translateY(-50%);
     text-align: center;
 }
@@ -200,6 +206,45 @@ ul.task-experience{
 }
 
 /* End of project */
+
+/* Part valeurs */
+
+#valeurs ol {
+	list-style: none; 
+	counter-reset: li;
+	width: 100%;
+	padding-left: 0;
+}
+
+#valeurs li::before {
+	content: counter(li); 
+	color: black;
+	font-size: 2em;
+  	display: inline-block; 
+  	/*width: 1em;
+  	margin-left: -1em;*/
+}
+
+#valeurs li {
+	counter-increment: li;
+	display: inline-block;
+	font-size: 2em;
+}
+
+/* End of valeurs */
+
+/* Part interest */
+
+#interet i{
+	font-size: 5em;
+}
+
+#interet p{
+	color: rgba(0,0,0,1);
+	font-size: 1.25em;
+}
+
+/* End of interest */
 
 /* Part contact */
 
