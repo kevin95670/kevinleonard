@@ -20,15 +20,18 @@
 <body>
 
   <nav class="menu navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#presentation">Kevin LEONARD</a>
+    <div class="container-fluid px-0">
+      <!--<a class="navbar-brand" href="#presentation">Kevin LEONARD</a>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="#presentation">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formations">Formations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#experiences">Expériences</a>
@@ -38,6 +41,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projets">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#valeurs">Valeurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interet">Centres d'intérêt</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -50,9 +59,10 @@
   <header class="presentation text-center text-white d-flex" id="presentation">
     <div class="container margin-top70">
       <div class="row">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-12 mx-auto intro">
           <img src="images/profil.png" alt="profil"/>
-          <h1 class="text-uppercase title">
+          <h1 class="title">
+            <strong id="name">Kevin LEONARD,</strong>
             <strong>Etudiant en Mastère développement web</strong>
           </h1>
           <hr>
@@ -60,10 +70,57 @@
         <div class="col-md-10 mx-auto">
           <p class="text-faded mb-5">Mon parcours personnel s'orientant progressivement vers l'univers de l'Informatique, j'ai voulu à travers mes études supérieures découvrir et approfondir le monde de la création de sites web. J'ai donc choisi de m'orienter vers un DUT Informatique afin de pouvoir comprendre et développer cette spécialisation. Dès ce diplôme obtenu, j'ai décidé de persévérer dans cette filière en continuant vers un cursus de 3ème année en licence Informatique. J'ai décidé de poursuivre en M1 Informatique un semestre pour finalement m'orienter vers un Mastère dans le domaine que j'affectionne le plus : le développement web. Je suis actuellement en alternance en temps que développeur - intégrateur pour la société Agence Webcom après avoir fait ma première année en alternance pour la société Exacompta.
             La finalisation de mes deux années de mastère me permettra de devenir développeur Web.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <section class="bg-brun impaire lazy" id="formations">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto text-center">
+            <h2 class="title text-white">Mes formations</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-4 text-center my-auto">
+            <img data-src="images/ecv.png" alt="ECV Digital"/>
+          </div>
+          <div class="col-md-8 text-experience">
+            <h3>ECV Digital</h3>
+            <p><em>2018 - 2020</em></p>
+            <ul class="task-experience">
+              <li>En cours d'obtention d'un mastère développement web</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-4 text-center my-auto">
+            <img data-src="images/UP13.png" alt="Université Paris 13"/>
+          </div>
+          <div class="col-md-8 text-experience">
+            <h3>Université Paris 13</h3>
+            <p><em>2016 - 2017</em></p>
+            <ul class="task-experience">
+              <li>Licence 3 en Informatique</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-4 text-center my-auto">
+            <img data-src="images/UP13.png" alt="Université Paris 13"/>
+          </div>
+          <div class="col-md-8 text-experience">
+            <h3>Université Paris 13</h3>
+            <p><em>2014 - 2016</em></p>
+            <ul class="task-experience">
+              <li>DUT Informatique</li>
+            </ul>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <section class="bg-beige paire lazy" id="experiences">
       <div class="container">
@@ -83,7 +140,6 @@
             <ul class="task-experience">
               <li>Améliorations et maintenance de sites web d'hôtellerie et de restauration.</li>
               <li>Utilisation du CMS interne et de Twig.</li>
-              <li>Correction de certains bug notamment au niveau des exports de commande.</li>
             </ul>
           </div>
         </div>
@@ -366,8 +422,8 @@
             </div>
           </div>
           <div class="row no-gutters mt-5">
-            <div class="col-md-4">
-              <a class="portfolio-box" rel="noopener" target="_blank" href="https://actvty.000webhostapp.com/Projet/index.php">
+            <div class="col-md-4 each-projet">
+              <a class="portfolio-box" rel="noopener" target="_blank" href="https://actvty.000webhostapp.com">
                 <div class="img-wrapper">
                   <img class="img-fluid" data-src="images/actvty.png" alt="actvty"/>
                 </div>
@@ -400,7 +456,7 @@
                 </div>
               </a>
             </div>-->
-            <div class="col-md-4 mb-md-0">
+            <div class="col-md-4 each-projet">
               <a class="portfolio-box" rel="noopener" target="_blank" href="https://footinho.com">
                 <div class="img-wrapper">
                   <img class="img-fluid" data-src="images/footinho.png" alt="Footinho"/>
@@ -417,7 +473,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4 mb-md-0">
+            <div class="col-md-4 each-projet">
               <a class="portfolio-box" rel="noopener" target="_blank" href="https://pelopia.com/">
                 <div class="img-wrapper">
                   <img class="img-fluid" data-src="images/pelopia.png" alt="Pelopia"/>
@@ -434,7 +490,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 each-projet">
               <a class="portfolio-box" rel="noopener" target="_blank" href="https://intersectionmagazine.fr/">
                 <div class="img-wrapper">
                   <img class="img-fluid" data-src="images/intersection.png" alt="Intersection magazine"/>
@@ -451,7 +507,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 each-projet">
               <a class="portfolio-box" rel="noopener" target="_blank" href="https://www.agenda-moderne.com/">
                 <div class="img-wrapper">
                   <img class="img-fluid" data-src="images/agenda-moderne.png" alt="Agenda Moderne"/>
@@ -468,7 +524,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 each-projet">
               <a class="portfolio-box" rel="noopener" target="_blank" href="https://www.hotel-litteraire-marcel-ayme.com/fr/">
                 <div class="img-wrapper">
                   <img class="img-fluid" data-src="images/ayme.png" alt="Marcel Ayme"/>

@@ -96,6 +96,24 @@ header hr{
 	border-color: #FFEBCD;
 }
 
+header.presentation .intro{
+	font-size: 3.2rem;
+}
+
+header.presentation #name{
+	display: block;
+	font-size: 3.5rem;
+}
+
+/* formations */
+
+#formations img{
+	width: 220px;
+	height: auto;
+}
+
+/* End of formations */
+
 /* End of partie présentation */
 
 
@@ -280,4 +298,11 @@ ul.task-experience{
 		margin: 20px 0;
 	}
 
+}
+@media screen and (max-width: 1048px) {
+	
+	.menu div a.nav-link{
+		font-size: 1.15em;
+		color: white;
+	}
 }
