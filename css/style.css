@@ -183,6 +183,10 @@ ul.task-experience{
 	overflow: hidden;
 }
 
+.each-projet{
+	margin-bottom: 20px;
+}
+
 .portfolio-box {
     position: relative;
     display: block;
