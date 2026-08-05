@@ -179,12 +179,12 @@ ul.task-experience{
 /* Part project */
 
 .img-wrapper{
-	max-height: 475px;
+	max-height: 440px;
 	overflow: hidden;
 }
 
 .each-projet{
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .portfolio-box {
