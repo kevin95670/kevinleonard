@@ -5,4 +5,13 @@ services:
       - "8081:80"
     volumes:
       - .:/var/www/html
-    container_name: cv-site
+    container_name: kael-site
+
+  sass:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    tty: true
+    command: sh -c "npm install -g sass && sass --watch --poll sass/principal.scss:css/principal.css"
+    container_name: kael-sass
