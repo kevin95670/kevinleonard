@@ -1,0 +1,62 @@
+/* ===== début variables ===== */
+:root {
+  --fond-page: #070b16;
+  --fond-carte: #0c1426;
+  --fond-carte-bleue: linear-gradient(160deg, #0c1838, #0a1226);
+  --fond-carte-violette: linear-gradient(160deg, #1a1033, #110b22);
+  --fond-formulaire: #0a1226;
+
+  --bordure-fine: #131e38;
+  --bordure-carte: #1b2a4a;
+  --bordure-carte-bleue: #1f3e7a;
+  --bordure-carte-violette: #4a2d86;
+  --bordure-bouton: #2a3e73;
+
+  --texte-principal: #e8ecf7;
+  --texte-doux: #c7d0e6;
+  --texte-secondaire: #b8c2da;
+  --texte-discret: #8fa0c8;
+  --texte-sur-bouton: #06101f;
+
+  --bleu: #3b82f6;
+  --bleu-clair: #38b6ff;
+  --bleu-lien: #7cc8ff;
+  --bleu-chiffre: #4c8dff;
+  --violet: #b27cff;
+  --violet-clair: #c4a0ff;
+  --vert: #2ee6a6;
+  --vert-clair: #5cf0bc;
+  --rouge-erreur: #ff8a8a;
+
+  --degrade-bleu: linear-gradient(90deg, var(--bleu), var(--bleu-clair));
+  --degrade-vert: linear-gradient(90deg, #b8f5dd, #2ee6a6);
+
+  --statut-en-ligne-texte: var(--vert-clair);
+  --statut-en-ligne-fond: rgba(46, 230, 166, 0.14);
+  --statut-en-ligne-bordure: #1e9e73;
+  --statut-bientot-texte: var(--violet-clair);
+  --statut-bientot-fond: rgba(165, 107, 255, 0.14);
+  --statut-bientot-bordure: #6a43b5;
+  --statut-livre-texte: var(--bleu-lien);
+  --statut-livre-fond: rgba(56, 182, 255, 0.12);
+  --statut-livre-bordure: #1f6fa0;
+
+  --lueur-bleue: 0 0 28px rgba(56, 182, 255, 0.35);
+  --lueur-carte: 0 0 40px rgba(59, 130, 246, 0.12);
+  --lueur-carte-violette: 0 0 40px rgba(165, 107, 255, 0.12);
+
+  --police-texte: 'Plus Jakarta Sans', sans-serif;
+  --police-titre: var(--police-texte);
+  --police-logo: 'Kaushan Script', cursive;
+
+  --rayon-carte: 20px;
+  --rayon-bloc: 24px;
+  --rayon-grand-bloc: 32px;
+  --rayon-bouton: 999px;
+
+  --largeur-max: 1280px;
+  --marge-page: clamp(20px, 5vw, 64px);
+  --espace-section: 96px;
+  --ecart-cartes: 24px;
+}
+/* ===== fin variables ===== */

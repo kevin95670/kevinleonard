@@ -1,0 +1,30 @@
+/* ===== début bouton ===== */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 40px;
+  border: 0;
+  border-radius: var(--rayon-bouton);
+  background: var(--degrade-bleu);
+  box-shadow: var(--lueur-bleue);
+  color: var(--texte-sur-bouton);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.bouton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.bouton-secondaire {
+  border: 1.5px solid var(--bordure-bouton);
+  background: rgba(12, 20, 38, 0.7);
+  box-shadow: none;
+  color: var(--texte-principal);
+  font-weight: 700;
+}
+/* ===== fin bouton ===== */

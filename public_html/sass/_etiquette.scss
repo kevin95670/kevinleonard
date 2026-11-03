@@ -1,0 +1,39 @@
+/* ===== début etiquette ===== */
+.etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 22px;
+  border-radius: var(--rayon-bouton);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.etiquette-disponible {
+  border: 2px solid var(--bleu);
+  background: rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 22px rgba(59, 130, 246, 0.3);
+  color: var(--bleu-lien);
+}
+
+.etiquette-point {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.etiquette-indisponible {
+  color: var(--statut-bientot-texte);
+  background: var(--statut-bientot-fond);
+  border-color: var(--statut-bientot-bordure);
+
+  .etiquette-point {
+    background: var(--statut-bientot-texte);
+  }
+}
+
+/* ===== fin etiquette ===== */

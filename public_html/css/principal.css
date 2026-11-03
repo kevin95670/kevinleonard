@@ -1,3 +1,510 @@
+@charset "UTF-8";
+/* ===== début variables ===== */
+:root {
+  --fond-page: #070b16;
+  --fond-carte: #0c1426;
+  --fond-carte-bleue: linear-gradient(160deg, #0c1838, #0a1226);
+  --fond-carte-violette: linear-gradient(160deg, #1a1033, #110b22);
+  --fond-formulaire: #0a1226;
+  --bordure-fine: #131e38;
+  --bordure-carte: #1b2a4a;
+  --bordure-carte-bleue: #1f3e7a;
+  --bordure-carte-violette: #4a2d86;
+  --bordure-bouton: #2a3e73;
+  --texte-principal: #e8ecf7;
+  --texte-doux: #c7d0e6;
+  --texte-secondaire: #b8c2da;
+  --texte-discret: #8fa0c8;
+  --texte-sur-bouton: #06101f;
+  --bleu: #3b82f6;
+  --bleu-clair: #38b6ff;
+  --bleu-lien: #7cc8ff;
+  --bleu-chiffre: #4c8dff;
+  --violet: #b27cff;
+  --violet-clair: #c4a0ff;
+  --vert: #2ee6a6;
+  --vert-clair: #5cf0bc;
+  --rouge-erreur: #ff8a8a;
+  --degrade-bleu: linear-gradient(90deg, var(--bleu), var(--bleu-clair));
+  --degrade-vert: linear-gradient(90deg, #b8f5dd, #2ee6a6);
+  --statut-en-ligne-texte: var(--vert-clair);
+  --statut-en-ligne-fond: rgba(46, 230, 166, 0.14);
+  --statut-en-ligne-bordure: #1e9e73;
+  --statut-bientot-texte: var(--violet-clair);
+  --statut-bientot-fond: rgba(165, 107, 255, 0.14);
+  --statut-bientot-bordure: #6a43b5;
+  --statut-livre-texte: var(--bleu-lien);
+  --statut-livre-fond: rgba(56, 182, 255, 0.12);
+  --statut-livre-bordure: #1f6fa0;
+  --lueur-bleue: 0 0 28px rgba(56, 182, 255, 0.35);
+  --lueur-carte: 0 0 40px rgba(59, 130, 246, 0.12);
+  --lueur-carte-violette: 0 0 40px rgba(165, 107, 255, 0.12);
+  --police-texte: 'Plus Jakarta Sans', sans-serif;
+  --police-titre: var(--police-texte);
+  --police-logo: 'Kaushan Script', cursive;
+  --rayon-carte: 20px;
+  --rayon-bloc: 24px;
+  --rayon-grand-bloc: 32px;
+  --rayon-bouton: 999px;
+  --largeur-max: 1280px;
+  --marge-page: clamp(20px, 5vw, 64px);
+  --espace-section: 96px;
+  --ecart-cartes: 24px;
+}
 
+/* ===== fin variables ===== */
+/* ===== début polices ===== */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/plus-jakarta-sans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/plus-jakarta-sans-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/plus-jakarta-sans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/plus-jakarta-sans-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("../fonts/kaushan-script-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* ===== fin polices ===== */
+/* ===== début base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+body {
+  margin: 0;
+  background: var(--fond-page);
+  color: var(--texte-principal);
+  font-family: var(--police-texte);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--police-titre);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--bleu-clair);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--bleu-clair);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--bleu);
+  color: var(--texte-sur-bouton);
+}
+
+.mot-accent {
+  background: var(--degrade-bleu);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===== fin base ===== */
+/* ===== début bouton ===== */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 40px;
+  border: 0;
+  border-radius: var(--rayon-bouton);
+  background: var(--degrade-bleu);
+  box-shadow: var(--lueur-bleue);
+  color: var(--texte-sur-bouton);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.bouton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.bouton-secondaire {
+  border: 1.5px solid var(--bordure-bouton);
+  background: rgba(12, 20, 38, 0.7);
+  box-shadow: none;
+  color: var(--texte-principal);
+  font-weight: 700;
+}
+
+/* ===== fin bouton ===== */
+/* ===== début etiquette ===== */
+.etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 22px;
+  border-radius: var(--rayon-bouton);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.etiquette-disponible {
+  border: 2px solid var(--bleu);
+  background: rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 22px rgba(59, 130, 246, 0.3);
+  color: var(--bleu-lien);
+}
+
+.etiquette-point {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.etiquette-indisponible {
+  color: var(--statut-bientot-texte);
+  background: var(--statut-bientot-fond);
+  border-color: var(--statut-bientot-bordure);
+}
+.etiquette-indisponible .etiquette-point {
+  background: var(--statut-bientot-texte);
+}
+
+/* ===== fin etiquette ===== */
+/* ===== début entete ===== */
+.entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 32px;
+  padding: 14px var(--marge-page);
+  border-bottom: 1px solid var(--bordure-fine);
+}
+
+.entete-logo {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 6px 0;
+}
+
+.entete-logo-nom {
+  font-family: var(--police-logo);
+  font-size: 34px;
+  line-height: 1.1;
+  color: var(--bleu-clair);
+  text-shadow: 0 0 20px rgba(56, 182, 255, 0.45);
+}
+
+.entete-logo-trait {
+  height: 3px;
+  border-radius: 3px;
+  background: var(--degrade-bleu);
+  box-shadow: 0 0 12px rgba(56, 182, 255, 0.6);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 28px;
+}
+
+.menu-lien {
+  padding: 12px 0;
+  color: var(--texte-doux);
+  font-weight: 500;
+}
+
+.menu-lien-actif {
+  padding: 10px 0 8px;
+  border-bottom: 2px solid var(--bleu-clair);
+  color: var(--texte-principal);
+  font-weight: 700;
+}
+
+.menu-bouton {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .menu-bouton {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    border: 1px solid var(--bordure-bouton);
+    border-radius: var(--rayon-bouton);
+    background: transparent;
+    cursor: pointer;
+  }
+  .menu-bouton span {
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--texte-principal);
+  }
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .menu-ouvert .menu {
+    display: flex;
+  }
+}
+/* ===== fin entete ===== */
+/* ===== début pied-de-page ===== */
+.pied-de-page {
+  border-top: 1px solid var(--bordure-fine);
+}
+
+.pied-de-page-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 28px var(--marge-page);
+  color: var(--texte-discret);
+  font-size: 0.875rem;
+}
+
+.pied-de-page-liens {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 24px;
+}
+
+.pied-de-page-lien {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--texte-doux);
+}
+
+.pied-de-page-haut {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--degrade-bleu);
+  color: var(--texte-sur-bouton);
+  box-shadow: 0 0 18px rgba(56, 182, 255, 0.4);
+}
+
+/* ===== fin pied-de-page ===== */
+/* ===== début contact ===== */
+.contact {
+  background: radial-gradient(60% 70% at 30% 0%, rgba(59, 130, 246, 0.22), rgba(7, 11, 22, 0) 72%);
+}
+
+.contact-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 56px;
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 80px var(--marge-page) var(--espace-section);
+}
+
+.contact-presentation {
+  flex: 1 1 400px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.contact-titre {
+  font-size: clamp(2.5rem, 5.4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.contact-texte {
+  max-width: 520px;
+  font-size: 1.1875rem;
+  color: var(--texte-doux);
+}
+
+.contact-liens {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-lien {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 0 24px;
+  border: 1px solid var(--bordure-carte);
+  border-radius: 18px;
+  background: var(--fond-carte);
+  color: var(--texte-principal);
+  font-weight: 700;
+}
+
+.contact-lien-fleche {
+  color: var(--bleu-clair);
+}
+
+.contact-formulaire {
+  flex: 1 1 440px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border: 1px solid var(--bordure-carte-bleue);
+  border-radius: 28px;
+  background: var(--fond-carte-bleue);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.18);
+  color-scheme: dark;
+}
+
+.contact-formulaire-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-champ {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-champ-libelle {
+  font-weight: 700;
+  color: var(--texte-doux);
+}
+
+.contact-champ-saisie {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 14px;
+  border: 1.5px solid var(--bordure-bouton);
+  border-radius: 14px;
+  background: var(--fond-formulaire);
+}
+
+.contact-champ-message {
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+.contact-piege {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-retour {
+  min-height: 1.5em;
+  color: var(--vert-clair);
+}
+
+.contact-retour-erreur {
+  color: var(--rouge-erreur);
+}
+
+.contact-mention {
+  font-size: 0.8125rem;
+  color: var(--texte-discret);
+}
+
+.contact-champ-saisie::placeholder {
+  color: var(--texte-discret);
+}
+
+/* ===== fin contact ===== */
 
 /*# sourceMappingURL=principal.css.map */

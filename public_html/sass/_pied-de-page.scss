@@ -1,0 +1,44 @@
+/* ===== début pied-de-page ===== */
+.pied-de-page {
+  border-top: 1px solid var(--bordure-fine);
+}
+
+.pied-de-page-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 28px var(--marge-page);
+  color: var(--texte-discret);
+  font-size: 0.875rem;
+}
+
+.pied-de-page-liens {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 24px;
+}
+
+.pied-de-page-lien {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--texte-doux);
+}
+
+.pied-de-page-haut {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--degrade-bleu);
+  color: var(--texte-sur-bouton);
+  box-shadow: 0 0 18px rgba(56, 182, 255, 0.4);
+}
+/* ===== fin pied-de-page ===== */
