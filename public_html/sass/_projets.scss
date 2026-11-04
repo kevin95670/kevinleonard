@@ -1,0 +1,209 @@
+/* ===== début projets ===== */
+.projets-presentation {
+  background: radial-gradient(60% 80% at 50% 0%, color-mix(in srgb, var(--bleu) 22%, transparent), transparent 72%);
+}
+
+.projets-presentation-contenu {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px var(--marge-page) 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.projets-surtitre {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bleu-lien);
+}
+
+.projets-titre {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.projets-texte {
+  max-width: 600px;
+  margin: 0;
+  font-size: 19px;
+  color: var(--texte-doux);
+}
+
+.projets-filtres {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 0 var(--marge-page) 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.projets-filtre {
+  min-height: 46px;
+  padding: 0 24px;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure-bouton);
+  border-radius: var(--rayon-bouton);
+  color: var(--texte-principal);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.projets-filtre-actif {
+  background: var(--degrade-bleu);
+  border-color: transparent;
+  color: var(--texte-sur-bouton);
+  font-weight: 800;
+  box-shadow: var(--lueur-bleue);
+}
+
+.projets-liste {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 0 var(--marge-page) 96px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--ecart-cartes);
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure-carte);
+  border-radius: var(--rayon-carte);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.projet-bientot {
+  background: transparent;
+  border: 1.5px dashed var(--bordure-bouton);
+}
+
+.projet-image {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-bottom: 1px solid var(--bordure-carte);
+  background: var(--fond-carte-bleue);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.projet-statut {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid;
+  border-radius: var(--rayon-bouton);
+  background-color: var(--fond-page);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.projet-statut-en-ligne {
+  color: var(--statut-en-ligne-texte);
+  border-color: var(--statut-en-ligne-bordure);
+  background-image: linear-gradient(var(--statut-en-ligne-fond), var(--statut-en-ligne-fond));
+
+  &::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+}
+
+.projet-statut-bientot {
+  color: var(--statut-bientot-texte);
+  border-color: var(--statut-bientot-bordure);
+  background-image: linear-gradient(var(--statut-bientot-fond), var(--statut-bientot-fond));
+}
+
+.projet-contenu {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projet-titre {
+  margin: 0;
+  font-size: 22px;
+}
+
+.projet-texte {
+  margin: 0;
+  color: var(--texte-secondaire);
+}
+
+.projet-technos {
+  font-size: 13px;
+  color: var(--texte-discret);
+}
+
+.projet-lien {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.projets-contact {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 0 var(--marge-page) 96px;
+}
+
+.projets-contact-bloc {
+  padding: clamp(32px, 6vw, 64px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: radial-gradient(70% 120% at 50% 0%, color-mix(in srgb, var(--bleu) 28%, transparent), color-mix(in srgb, var(--fond-carte) 90%, transparent) 70%);
+  border: 1px solid var(--bordure-carte-bleue);
+  border-radius: var(--rayon-grand-bloc);
+  box-shadow: var(--lueur-carte);
+}
+
+.projets-contact-titre {
+  flex: 1 1 420px;
+  margin: 0;
+  font-size: clamp(28px, 3.6vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+/* ===== fin projets ===== */
