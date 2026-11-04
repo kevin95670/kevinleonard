@@ -1,0 +1,52 @@
+/* ===== début invitation ===== */
+.invitation {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 0 var(--marge-page) 96px;
+}
+
+.invitation-bloc {
+  padding: clamp(32px, 6vw, 64px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: radial-gradient(70% 120% at 50% 0%, color-mix(in srgb, var(--bleu) 28%, transparent), color-mix(in srgb, var(--fond-carte) 90%, transparent) 70%);
+  border: 1px solid var(--bordure-carte-bleue);
+  border-radius: var(--rayon-grand-bloc);
+  box-shadow: var(--lueur-carte);
+}
+
+.invitation-titre {
+  flex: 1 1 420px;
+  margin: 0;
+  font-size: clamp(28px, 3.6vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.invitation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 480px) {
+  .invitation-bloc {
+    padding: 28px 20px;
+  }
+
+  .invitation-actions {
+    width: 100%;
+  }
+
+  .invitation-actions .bouton {
+    flex: 1 1 100%;
+    padding: 0 16px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+}
+
+/* ===== fin invitation ===== */

@@ -29,7 +29,7 @@ $retour = $retours[$envoi] ?? '';
       <div class="contact-champ">
         <label class="contact-champ-libelle" for="demande">Votre demande</label>
         <select class="contact-champ-saisie" id="demande" name="demande" required>
-          <option value="" disabled selected>Choisissez un type de projet</option>
+          <option value="" disabled selected>Type de projet</option>
           <optgroup label="Nouveau site">
             <option>Site vitrine</option>
             <option>Site e-commerce</option>

@@ -40,9 +40,9 @@ include 'includes/projets-donnees.php';
     <?php endforeach; ?>
   </ul>
 
-  <section class="projets-contact">
-    <div class="projets-contact-bloc">
-      <h2 class="projets-contact-titre">Un projet du même genre à confier ?</h2>
+  <section class="invitation">
+    <div class="invitation-bloc">
+      <h2 class="invitation-titre">Un projet du même genre à confier ?</h2>
       <a class="bouton" href="/services.php">Voir les services et tarifs</a>
     </div>
   </section>

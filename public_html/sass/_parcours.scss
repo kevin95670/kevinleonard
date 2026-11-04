@@ -1,0 +1,405 @@
+/* ===== début parcours ===== */
+.parcours-presentation {
+  background: radial-gradient(60% 80% at 50% 0%, color-mix(in srgb, var(--bleu) 22%, transparent), transparent 72%);
+}
+
+.parcours-presentation-contenu {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px var(--marge-page) 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.parcours-surtitre {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bleu-lien);
+}
+
+.parcours-titre {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.parcours-texte {
+  max-width: 600px;
+  margin: 0;
+  font-size: 19px;
+  color: var(--texte-doux);
+}
+
+.parcours-liens {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.parcours-experiences,
+.parcours-competences,
+.parcours-details {
+  margin: 0 auto;
+  padding: 0 var(--marge-page) 96px;
+}
+
+.parcours-experiences {
+  max-width: 1100px;
+}
+
+.parcours-competences,
+.parcours-details {
+  max-width: var(--largeur-max);
+}
+
+.parcours-section-titre {
+  margin: 0 0 32px;
+  font-size: clamp(30px, 4vw, 40px);
+  letter-spacing: -0.02em;
+}
+
+.parcours-experiences-liste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.parcours-experience {
+  padding: 20px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  border: 1px solid var(--bordure-carte);
+  border-radius: var(--rayon-carte);
+}
+
+.parcours-experience-dates {
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.parcours-experience-periode {
+  font-weight: 700;
+  color: var(--texte-discret);
+}
+
+.parcours-experience-duree {
+  font-size: 14px;
+  color: var(--texte-discret);
+}
+
+.parcours-experience-contenu {
+  flex: 1 1 380px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.parcours-experience-titre {
+  margin: 0;
+  font-size: 18px;
+}
+
+.parcours-experience-resume {
+  margin: 6px 0 0;
+  color: var(--texte-secondaire);
+}
+
+.parcours-experience-entete {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.parcours-logo {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fond-logo);
+  border-radius: 12px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.parcours-experience-detaillee {
+  padding: 32px;
+  gap: 16px 40px;
+  background: var(--fond-carte);
+  border-radius: var(--rayon-bloc);
+
+  .parcours-experience-dates {
+    gap: 2px;
+  }
+
+  .parcours-experience-periode {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .parcours-experience-contenu {
+    gap: 12px;
+  }
+
+  .parcours-experience-titre {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.parcours-experience-bleu {
+  background: var(--fond-carte-bleue);
+  border-color: var(--bordure-carte-bleue);
+  box-shadow: var(--lueur-carte);
+
+  .parcours-experience-periode {
+    color: var(--bleu-lien);
+  }
+
+  .parcours-techno {
+    background: color-mix(in srgb, var(--bleu) 14%, transparent);
+    border-color: var(--bordure-carte-bleue);
+    color: var(--bleu-lien);
+  }
+}
+
+.parcours-experience-violet {
+  .parcours-experience-periode {
+    color: var(--violet-clair);
+  }
+
+  .parcours-techno {
+    background: color-mix(in srgb, var(--violet) 14%, transparent);
+    border-color: var(--bordure-carte-violette);
+    color: var(--violet-clair);
+  }
+}
+
+.parcours-experience-taches {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--texte-doux);
+}
+
+.parcours-experience-technos {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.parcours-techno {
+  padding: 4px 14px;
+  border: 1px solid;
+  border-radius: var(--rayon-bouton);
+  font-size: 13px;
+}
+
+.parcours-groupes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.parcours-groupe {
+  flex: 1 1 220px;
+  padding: 28px;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure-carte);
+  border-radius: var(--rayon-carte);
+}
+
+.parcours-groupe-titre {
+  margin: 0 0 14px;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.parcours-groupe-liste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.parcours-groupe-bleu {
+  .parcours-groupe-titre,
+  .parcours-niveau {
+    color: var(--bleu-lien);
+  }
+}
+
+.parcours-groupe-violet {
+  .parcours-groupe-titre,
+  .parcours-niveau {
+    color: var(--violet-clair);
+  }
+}
+
+.parcours-groupe-vert {
+  .parcours-groupe-titre,
+  .parcours-niveau {
+    color: var(--vert-clair);
+  }
+}
+
+.parcours-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.parcours-niveau {
+  display: inline-flex;
+  flex-shrink: 0;
+  gap: 4px;
+}
+
+.parcours-niveau-point {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bordure-bouton);
+}
+
+.parcours-niveau-point-plein {
+  background: currentColor;
+}
+
+.parcours-legende {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 14px;
+  color: var(--texte-discret);
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .parcours-niveau {
+    color: var(--texte-doux);
+  }
+}
+
+.parcours-actuel {
+  margin: 24px 0 0;
+  padding: 22px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  background: color-mix(in srgb, var(--vert) 8%, transparent);
+  border: 1px solid var(--statut-en-ligne-bordure);
+  border-radius: var(--rayon-carte);
+}
+
+.parcours-actuel-etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vert-clair);
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+}
+
+.parcours-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ecart-cartes);
+}
+
+.parcours-bloc {
+  flex: 1 1 420px;
+  min-width: 0;
+  padding: 36px;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure-carte);
+  border-radius: var(--rayon-bloc);
+}
+
+.parcours-bloc-titre {
+  margin: 0 0 20px;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+}
+
+.parcours-bloc-liste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.parcours-ligne {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid var(--bordure-carte);
+}
+
+.parcours-ligne-contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.parcours-ligne-periode {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--bleu-lien);
+}
+
+.parcours-ligne-titre {
+  margin: 0;
+  font-size: 18px;
+}
+
+.parcours-ligne-texte {
+  margin: 0;
+  color: var(--texte-secondaire);
+}
+/* ===== fin parcours ===== */
