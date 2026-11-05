@@ -1,7 +1,7 @@
 <?php
 $titre_page = 'Création de site web à Cherbourg : tarifs | Kevin Léonard';
 $titre_partage = 'Services et tarifs - Kevin Léonard';
-$description_page = 'Site vitrine, boutique, landing page, refonte ou correction de site : tarifs dès 300 €, premier échange gratuit, partout en France à distance.';
+$description_page = 'Site vitrine, boutique, landing page, refonte ou correction de site : tarifs transparents, premier échange gratuit, partout en France à distance.';
 $adresse_page = '/services.php';
 include 'includes/entete.php';
 include 'includes/services-donnees.php';
