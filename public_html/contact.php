@@ -1,7 +1,7 @@
 <?php
-$titre_page = 'Contact - Kevin Léonard';
+$titre_page = 'Contact et demande de devis site web | Kevin Léonard';
 $titre_partage = 'Contact - Kevin Léonard';
-$description_page = "Un projet de site web ? Écrivez-moi, je vous réponds rapidement.";
+$description_page = 'Un projet de site web ou un poste à pourvoir ? Écrivez-moi : à Cherbourg ou à distance, partout en France.';
 $adresse_page = '/contact.php';
 include 'includes/entete.php';
 include 'includes/services-donnees.php';

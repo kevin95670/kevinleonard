@@ -1,7 +1,7 @@
 <?php
-$titre_page = 'Services - Kevin Léonard, développeur web freelance';
-$titre_partage = 'Services - Kevin Léonard';
-$description_page = "Création de sites vitrines, e-commerce et sur mesure, refonte, correction, référencement et maintenance. Un seul interlocuteur, de l'idée à la mise en ligne.";
+$titre_page = 'Création de site web à Cherbourg : tarifs | Kevin Léonard';
+$titre_partage = 'Services et tarifs - Kevin Léonard';
+$description_page = 'Site vitrine, boutique, landing page, refonte ou correction de site : tarifs dès 300 €, premier échange gratuit, partout en France à distance.';
 $adresse_page = '/services.php';
 include 'includes/entete.php';
 include 'includes/services-donnees.php';

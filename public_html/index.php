@@ -1,7 +1,7 @@
 <?php
-$titre_page = 'Kevin Léonard - Développeur web full-stack PHP et freelance';
+$titre_page = 'Développeur web freelance à Cherbourg | Kevin Léonard';
 $titre_partage = 'Kevin Léonard - Développeur web full-stack PHP';
-$description_page = "Développeur full-stack PHP avec plus de 5 ans d'expérience. Disponible en CDI et pour des missions freelance : création, refonte et correction de sites web.";
+$description_page = 'Développeur full-stack PHP à Cherbourg, en CDI ou freelance : création, refonte et correction de sites web, partout en France à distance.';
 $adresse_page = '/';
 include 'includes/entete.php';
 include 'includes/projets-donnees.php';

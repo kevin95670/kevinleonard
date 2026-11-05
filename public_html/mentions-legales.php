@@ -1,5 +1,5 @@
 <?php
-$titre_page = 'Mentions légales - Kevin Léonard';
+$titre_page = 'Mentions légales | Kevin Léonard';
 $titre_partage = 'Mentions légales - Kevin Léonard';
 $description_page = 'Mentions légales du site kevinleonard.fr : éditeur, hébergeur, propriété intellectuelle et données personnelles.';
 $adresse_page = '/mentions-legales.php';

@@ -1,5 +1,5 @@
 <?php
-$titre_page = 'Projets - Kevin Léonard';
+$titre_page = 'Projets : sites et boutiques en ligne | Kevin Léonard';
 $titre_partage = 'Projets - Kevin Léonard';
 $description_page = 'Boutiques en ligne, sites vitrines et outils sur mesure en PHP et WordPress : découvrez mes projets en production.';
 $adresse_page = '/projets.php';

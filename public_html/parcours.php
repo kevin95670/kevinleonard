@@ -1,5 +1,5 @@
 <?php
-$titre_page = 'Parcours et CV - Kevin Léonard';
+$titre_page = 'Parcours et CV développeur web PHP | Kevin Léonard';
 $titre_partage = 'Parcours et CV - Kevin Léonard';
 $description_page = "Développeur full-stack PHP avec 5 ans d'expérience : expériences, compétences et formations. Téléchargez mon CV.";
 $adresse_page = '/parcours.php';
