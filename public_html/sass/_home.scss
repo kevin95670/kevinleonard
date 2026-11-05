@@ -1,0 +1,223 @@
+/* ===== début home ===== */
+.home-presentation {
+  background: radial-gradient(60% 55% at 50% 28%, color-mix(in srgb, var(--bleu) 22%, transparent), transparent 72%);
+  border-bottom: 1px solid var(--bordure-carte);
+}
+
+.home-presentation-contenu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 72px var(--marge-page) 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+}
+
+.home-orbe {
+  filter: drop-shadow(0 0 16px color-mix(in srgb, var(--bleu-clair) 55%, transparent));
+}
+
+.home-pastilles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.home-pastille-vert {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 26px;
+  border-radius: var(--rayon-bouton);
+  background: var(--degrade-vert);
+  color: var(--texte-sur-bouton);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.home-titre {
+  margin: 14px 0 0;
+  font-size: clamp(44px, 7vw, 84px);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+.home-metier {
+  font-size: clamp(20px, 2.4vw, 26px);
+  color: var(--texte-discret);
+}
+
+.home-intro {
+  max-width: 640px;
+  margin: 6px 0 0;
+  font-size: 19px;
+  color: var(--texte-doux);
+}
+
+.home-actions {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+@media (max-width: 480px) {
+  .home-actions .bouton {
+    flex: 1 1 100%;
+  }
+}
+
+.home-chiffres,
+.home-accroches {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 0 var(--marge-page);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ecart-cartes);
+}
+
+.home-chiffres {
+  padding-top: var(--espace-section);
+}
+
+.home-accroches {
+  padding-top: var(--ecart-cartes);
+}
+
+.home-chiffres-bloc {
+  flex: 1 1 420px;
+  min-width: 0;
+  padding: 36px;
+  border: 1px solid var(--bordure-carte);
+  border-radius: var(--rayon-bloc);
+}
+
+.home-chiffres-bloc-bleu {
+  background: var(--fond-carte-bleue);
+  border-color: var(--bordure-carte-bleue);
+  box-shadow: var(--lueur-carte);
+
+  .home-chiffres-titre {
+    color: var(--bleu-lien);
+  }
+
+  .home-chiffre-valeur {
+    color: var(--bleu-chiffre);
+  }
+}
+
+.home-chiffres-bloc-violet {
+  background: var(--fond-carte-violette);
+  border-color: var(--bordure-carte-violette);
+  box-shadow: var(--lueur-carte-violette);
+
+  .home-chiffres-titre {
+    color: var(--violet-clair);
+  }
+
+  .home-chiffre-valeur {
+    color: var(--violet);
+  }
+}
+
+.home-chiffres-titre {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-chiffres-liste {
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 40px;
+}
+
+.home-chiffre {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.home-chiffre-valeur {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.home-chiffre-libelle {
+  color: var(--texte-secondaire);
+}
+
+.home-accroche {
+  flex: 1 1 420px;
+  min-width: 0;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure-carte);
+  border-radius: var(--rayon-bloc);
+}
+
+.home-accroche-surtitre {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--texte-discret);
+}
+
+.home-accroche-titre {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.home-accroche-texte {
+  margin: 0;
+  color: var(--texte-secondaire);
+}
+
+.home-lien {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  color: var(--bleu-lien);
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.home-projets-entete {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: var(--espace-section) var(--marge-page) 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.home-section-titre {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -0.02em;
+}
+/* ===== fin home ===== */

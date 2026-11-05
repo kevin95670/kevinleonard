@@ -1,3 +1,5 @@
 User-agent: *
-Disallow:
-Sitemap:https://kevinleonard.fr/sitemap.xml
+Disallow: /includes/
+Disallow: /envoi-contact.php
+
+Sitemap: https://kevinleonard.fr/sitemap.xml

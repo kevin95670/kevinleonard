@@ -1,6 +1,17 @@
 <?php
 $projets = [
     [
+        'cle' => 'dream-and-swim',
+        'nom' => 'Dream & Swim',
+        'texte' => 'Site vitrine pour une entreprise de dépannage, réparation et construction de piscines. Mon premier site client, en cours de réalisation.',
+        'technos' => 'WordPress · Elementor',
+        'image' => 'dream-and-swim.webp',
+        'adresse' => '',
+        'lien' => '',
+        'statut' => 'en-cours',
+        'filtres' => ['wordpress'],
+    ],
+    [
         'cle' => 'sigma',
         'nom' => 'Sigma',
         'texte' => 'Site de restaurant fictif : réservation, recettes et boutique.',
@@ -25,7 +36,7 @@ $projets = [
     [
         'cle' => 'footinho',
         'nom' => 'Footinho',
-        'texte' => 'Mon projet perso : invitations, présences et messages pour un groupe de joueurs.',
+        'texte' => 'Invitations, présences et messages pour un groupe de joueurs de football.',
         'technos' => 'PHP · jQuery · HTML · CSS',
         'image' => 'footinho.webp',
         'adresse' => 'https://footinho.com',
@@ -74,7 +85,7 @@ $projets = [
         'image' => 'lp-conseil-securite.webp',
         'adresse' => 'https://github.com/kevin95670/LP',
         'lien' => 'Voir le GitHub →',
-        'statut' => 'en-ligne',
+        'statut' => 'ferme',
         'filtres' => ['front', 'back'],
     ],
     [
@@ -103,7 +114,8 @@ $projets = [
 
 $statuts = [
     'en-ligne' => 'En ligne',
-    'bientot' => 'Bientôt',
+    'en-cours' => 'En cours',
+    'ferme' => 'Site fermé',
 ];
 
 $filtres_projets = [

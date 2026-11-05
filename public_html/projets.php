@@ -43,7 +43,7 @@ include 'includes/projets-donnees.php';
   <section class="invitation">
     <div class="invitation-bloc">
       <h2 class="invitation-titre">Un projet du même genre à confier ?</h2>
-      <a class="bouton" href="/services.php">Voir les services et tarifs</a>
+      <a class="bouton" href="/services.php">Services et tarifs</a>
     </div>
   </section>
 </main>

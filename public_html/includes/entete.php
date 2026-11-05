@@ -1,7 +1,7 @@
 <?php
 $adresse_site = 'https://kevinleonard.fr';
 $adresse_complete = $adresse_site . $adresse_page;
-$image_partage = $adresse_site . '/images/bg.jpg';
+$image_partage = $adresse_site . '/images/apercu-kevinleonard.jpg';
 include __DIR__ . '/configuration.php';
 $pages = [
     ['titre' => 'Projets', 'adresse' => '/projets.php'],

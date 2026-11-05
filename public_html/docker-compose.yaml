@@ -5,7 +5,15 @@ services:
       - "8081:80"
     volumes:
       - .:/var/www/html
+    depends_on:
+      - mailpit
     container_name: kael-site
+
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - "8025:8025"
+    container_name: kael-mailpit
 
   sass:
     image: node:22-alpine

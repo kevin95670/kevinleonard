@@ -77,15 +77,33 @@
   }
 
   .menu {
-    display: none;
     width: 100%;
+    max-height: 0;
+    margin-top: -8px;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: flex-start;
     gap: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease, margin-top 0.4s ease, visibility 0s linear 0.4s;
   }
 
   .menu-ouvert .menu {
-    display: flex;
+    max-height: 320px;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease, max-height 0.4s ease, margin-top 0.4s ease, visibility 0s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .menu,
+    .menu-ouvert .menu {
+      transition: none;
+    }
   }
 }
 /* ===== fin entete ===== */

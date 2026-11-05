@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kevinleonard.fr/</loc>
-    <lastmod>2020-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://kevinleonard.fr/projets.php</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://kevinleonard.fr/services.php</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://kevinleonard.fr/parcours.php</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://kevinleonard.fr/contact.php</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://kevinleonard.fr/mentions-legales.php</loc>
+    <lastmod>2026-11-05</lastmod>
   </url>
 </urlset>

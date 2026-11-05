@@ -157,6 +157,7 @@ $qualites = [
 <main>
   <section class="parcours-presentation">
     <div class="parcours-presentation-contenu">
+      <img class="parcours-photo" src="/images/profil.webp" alt="Portrait de Kevin Léonard" width="400" height="351">
       <span class="parcours-surtitre">Parcours · CV</span>
       <h1 class="parcours-titre">5 ans à construire des <span class="mot-accent">boutiques</span> et des outils métier.</h1>
       <p class="parcours-texte">Développeur full-stack PHP, formé en informatique puis en développement web, avec plusieurs années en autonomie complète.</p>

@@ -14,6 +14,16 @@
   text-align: center;
 }
 
+.parcours-photo {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  object-position: center 25%;
+  border: 2px solid var(--bordure-carte-bleue);
+  border-radius: 50%;
+  box-shadow: var(--lueur-carte);
+}
+
 .parcours-surtitre {
   font-weight: 700;
   font-size: 14px;

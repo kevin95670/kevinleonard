@@ -143,10 +143,32 @@
   }
 }
 
-.projet-statut-bientot {
-  color: var(--statut-bientot-texte);
-  border-color: var(--statut-bientot-bordure);
-  background-image: linear-gradient(var(--statut-bientot-fond), var(--statut-bientot-fond));
+.projet-statut-en-cours {
+  color: var(--bleu-lien);
+  border-color: var(--bordure-carte-bleue);
+  background-image: linear-gradient(color-mix(in srgb, var(--bleu) 14%, transparent), color-mix(in srgb, var(--bleu) 14%, transparent));
+
+  &::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+}
+
+.projet-statut-ferme {
+  color: var(--texte-discret);
+  border-color: var(--bordure-bouton);
+  background-image: linear-gradient(color-mix(in srgb, var(--texte-discret) 12%, transparent), color-mix(in srgb, var(--texte-discret) 12%, transparent));
+
+  &::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+  }
 }
 
 .projet-contenu {
