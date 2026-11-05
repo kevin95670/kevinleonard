@@ -2,7 +2,7 @@
 include __DIR__ . '/includes/services-donnees.php';
 
 $adresse_reception = 'kevin-leonard@orange.fr';
-$adresse_expediteur = 'noreply@kevinleonard.fr';
+$adresse_expediteur = 'kael@kevinleonard.fr';
 
 $demandes_autorisees = [
     'Site vitrine',
