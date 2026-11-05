@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/includes/services-donnees.php';
 
-$adresse_reception = 'kaelkevinleonard@gmail.com';
+$adresse_reception = 'kevin-leonard@orange.fr';
 $adresse_expediteur = 'kael@kevinleonard.fr';
 
 $demandes_autorisees = [
