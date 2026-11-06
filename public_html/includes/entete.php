@@ -28,7 +28,7 @@ $pages = [
   <meta property="og:image" content="<?= $image_partage ?>">
   <meta property="og:description" content="<?= htmlspecialchars($description_page) ?>">
   <link rel="icon" href="/images/logo.ico?v=2" type="image/x-icon">
-  <link rel="stylesheet" href="/css/principal.css">
+  <link rel="stylesheet" href="/css/principal.css?v=<?= filemtime(__DIR__ . '/../css/principal.css') ?>">
 </head>
 <body>
 <header class="entete">
