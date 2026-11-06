@@ -17,7 +17,11 @@ $pages = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= htmlspecialchars($titre_page) ?></title>
   <meta name="description" content="<?= htmlspecialchars($description_page) ?>">
+  <?php if (!empty($noindex)): ?>
+  <meta name="robots" content="noindex">
+  <?php else: ?>
   <link rel="canonical" href="<?= $adresse_complete ?>">
+  <?php endif; ?>
   <meta property="og:title" content="<?= htmlspecialchars($titre_partage) ?>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= $adresse_complete ?>">

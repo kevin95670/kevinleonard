@@ -1,0 +1,45 @@
+/* ===== début erreur ===== */
+.erreur {
+  background: radial-gradient(60% 70% at 50% 0%, rgba(59, 130, 246, 0.22), rgba(7, 11, 22, 0) 72%);
+}
+
+.erreur-contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+  padding: 120px var(--marge-page) var(--espace-section);
+  text-align: center;
+}
+
+.erreur-code {
+  font-size: clamp(5rem, 16vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--bleu-clair);
+}
+
+.erreur-titre {
+  font-size: clamp(2.5rem, 5.4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.erreur-texte {
+  max-width: 520px;
+  font-size: 1.1875rem;
+  color: var(--texte-doux);
+}
+
+.erreur-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+/* ===== fin erreur ===== */

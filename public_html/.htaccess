@@ -3,6 +3,7 @@ Header set X-Frame-Options: "sameorigin"
 Header set Referrer-Policy "strict-origin-when-cross-origin"
 Header set x-xss-protection "1; mode=block"
 
+ErrorDocument 404 /404.php
 
 AddDefaultCharset UTF-8
 
