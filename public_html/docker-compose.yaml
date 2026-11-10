@@ -21,5 +21,5 @@ services:
     volumes:
       - .:/app
     tty: true
-    command: sh -c "npm install -g sass && sass --watch --poll sass/principal.scss:css/principal.css"
+    command: sh -c "npm install -g sass && sass --watch --poll sass/principal.scss:css/principal.css sass/portfolio.scss:css/portfolio.css"
     container_name: kael-sass
