@@ -3,7 +3,7 @@
 header('X-Robots-Tag: noindex, follow');
 
 // À renseigner : adresse de ton profil Malt (le bouton n'apparaît que si elle est remplie).
-$lien_malt = '';
+$lien_malt = 'https://www.malt.fr/profile/kevinleonard';
 
 // Projets affichés, dans cet ordre (clés de includes/projets-donnees.php).
 $projets_retenus = ['petite-source', 'piscinelle', 'marcel-ayme', 'sigma'];
