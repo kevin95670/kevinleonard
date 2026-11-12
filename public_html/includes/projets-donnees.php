@@ -23,6 +23,17 @@ $projets = [
         'filtres' => ['wordpress'],
     ],
     [
+        'cle' => 'replay',
+        'nom' => 'Replay',
+        'texte' => "Site fictif de vente de jeux vidéo d'occasion entre particuliers : annonces, panier Stripe (mode test), liste de souhaits et avis.",
+        'technos' => 'Symfony 7 · Twig · Tailwind · Stripe (test)',
+        'image' => 'replay.webp',
+        'adresse' => 'https://replay.kevinleonard.fr/jeux',
+        'lien' => 'Voir le site →',
+        'statut' => 'en-ligne',
+        'filtres' => ['fullstack', 'back'],
+    ],
+    [
         'cle' => 'petite-source',
         'nom' => 'Petite Source',
         'texte' => 'Mini-piscines et spas hors-sol. Conçu en entier, du design au code.',

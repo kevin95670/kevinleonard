@@ -6,7 +6,7 @@ $adresse_page = '/';
 include 'includes/entete.php';
 include 'includes/projets-donnees.php';
 
-$cles_accueil = ['dream-and-swim', 'petite-source', 'piscinelle', 'footinho', 'sigma', 'rolling-deck'];
+$cles_accueil = ['dream-and-swim', 'petite-source', 'piscinelle', 'footinho', 'sigma', 'rolling-deck','replay'];
 $projets_par_cle = array_column($projets, null, 'cle');
 $projets_accueil = array_filter(array_map(fn($cle) => $projets_par_cle[$cle] ?? null, $cles_accueil));
 
