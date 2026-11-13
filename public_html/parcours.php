@@ -108,6 +108,7 @@ $competences = [
             ['nom' => 'HTML 5 · CSS 3 · SASS', 'niveau' => 4],
             ['nom' => 'Bootstrap', 'niveau' => 4],
             ['nom' => 'JavaScript / jQuery', 'niveau' => 3],
+            ['nom' => 'Tailwind CSS', 'niveau' => 2],
             ['nom' => 'Vue.js', 'niveau' => 2],
             ['nom' => 'React', 'niveau' => 2],
         ],
