@@ -118,7 +118,11 @@ $accroches = [
       <div class="projet-contenu">
         <h3 class="projet-titre"><?= $projet['nom'] ?></h3>
         <p class="projet-texte"><?= $projet['texte'] ?></p>
-        <span class="projet-technos"><?= $projet['technos'] ?></span>
+        <ul class="projet-technos">
+          <?php foreach (explode(' · ', $projet['technos']) as $techno): ?>
+          <li class="projet-techno"><?= $techno ?></li>
+          <?php endforeach; ?>
+        </ul>
         <?php if ($projet['adresse'] !== ''): ?>
         <a class="projet-lien" href="<?= $projet['adresse'] ?>" target="_blank" rel="noopener"><?= $projet['lien'] ?></a>
         <?php endif; ?>

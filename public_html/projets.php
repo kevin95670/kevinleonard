@@ -11,7 +11,7 @@ include 'includes/projets-donnees.php';
     <div class="projets-presentation-contenu">
       <span class="projets-surtitre">Réalisations</span>
       <h1 class="projets-titre">Des sites en <span class="mot-accent">production</span>, pas des maquettes.</h1>
-      <p class="projets-texte">Boutiques en ligne, sites vitrines et outils sur mesure. Choisissez un type de travail pour filtrer.</p>
+      <p class="projets-texte">Boutiques en ligne, sites vitrines, catalogues de produits et applications sur mesure. Choisissez un type de site pour filtrer.</p>
     </div>
   </section>
 
@@ -31,7 +31,11 @@ include 'includes/projets-donnees.php';
       <div class="projet-contenu">
         <h2 class="projet-titre"><?= $projet['nom'] ?></h2>
         <p class="projet-texte"><?= $projet['texte'] ?></p>
-        <span class="projet-technos"><?= $projet['technos'] ?></span>
+        <ul class="projet-technos">
+          <?php foreach (explode(' · ', $projet['technos']) as $techno): ?>
+          <li class="projet-techno"><?= $techno ?></li>
+          <?php endforeach; ?>
+        </ul>
         <?php if ($projet['adresse'] !== ''): ?>
         <a class="projet-lien" href="<?= $projet['adresse'] ?>" target="_blank" rel="noopener"><?= $projet['lien'] ?></a>
         <?php endif; ?>

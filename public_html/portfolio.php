@@ -223,7 +223,11 @@ $formations = [
         <div class="projet-contenu">
           <h3 class="projet-titre"><?= e($projet['nom']) ?></h3>
           <p class="projet-texte"><?= e($projet['texte']) ?></p>
-          <span class="projet-technos"><?= e($projet['technos']) ?></span>
+          <ul class="projet-technos">
+            <?php foreach (explode(' · ', $projet['technos']) as $techno): ?>
+            <li class="projet-techno"><?= e($techno) ?></li>
+            <?php endforeach; ?>
+          </ul>
           <?php if ($projet['adresse'] !== ''): ?>
           <a class="projet-lien" href="<?= e($projet['adresse']) ?>" target="_blank" rel="noopener"><?= e($projet['lien']) ?></a>
           <?php endif; ?>

@@ -9,7 +9,7 @@ $projets = [
         'adresse' => '',
         'lien' => '',
         'statut' => 'en-cours',
-        'filtres' => ['wordpress'],
+        'filtres' => ['vitrine', 'wordpress'],
     ],
     [
         'cle' => 'sigma',
@@ -20,7 +20,7 @@ $projets = [
         'adresse' => 'https://sigma.kevinleonard.fr/',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['wordpress'],
+        'filtres' => ['vitrine', 'boutique', 'wordpress'],
     ],
     [
         'cle' => 'replay',
@@ -31,7 +31,7 @@ $projets = [
         'adresse' => 'https://replay.kevinleonard.fr/',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['fullstack', 'back'],
+        'filtres' => ['boutique', 'application'],
     ],
     [
         'cle' => 'petite-source',
@@ -42,7 +42,7 @@ $projets = [
         'adresse' => 'https://www.petite-source.com',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['fullstack', 'back'],
+        'filtres' => ['catalogue'],
     ],
     [
         'cle' => 'footinho',
@@ -53,7 +53,7 @@ $projets = [
         'adresse' => 'https://footinho.com',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['fullstack'],
+        'filtres' => ['application'],
     ],
     [
         'cle' => 'piscinelle',
@@ -64,18 +64,18 @@ $projets = [
         'adresse' => 'https://piscinelle.com',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['fullstack', 'back'],
+        'filtres' => ['catalogue', 'application'],
     ],
     [
         'cle' => 'rolling-deck',
         'nom' => 'Rolling Deck',
-        'texte' => 'Vente de couvertures-terrasses de piscine.',
+        'texte' => 'Présentation des couvertures-terrasses de piscine, avec demande de devis par formulaire.',
         'technos' => 'PHP orienté objet · MVC',
         'image' => 'rolling-deck.webp',
         'adresse' => 'https://rolling-deck.com/',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['fullstack', 'back'],
+        'filtres' => ['catalogue'],
     ],
     [
         'cle' => 'piscinelle-accessoires',
@@ -86,7 +86,7 @@ $projets = [
         'adresse' => 'https://piscinelle.com',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['fullstack'],
+        'filtres' => ['boutique'],
     ],
     [
         'cle' => 'lp-conseil',
@@ -97,7 +97,7 @@ $projets = [
         'adresse' => 'https://github.com/kevin95670/LP',
         'lien' => 'Voir le GitHub →',
         'statut' => 'ferme',
-        'filtres' => ['front', 'back'],
+        'filtres' => ['vitrine'],
     ],
     [
         'cle' => 'agenda-moderne',
@@ -108,7 +108,7 @@ $projets = [
         'adresse' => 'https://www.quovadisfactory.com/fr/',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['back'],
+        'filtres' => ['boutique'],
     ],
     [
         'cle' => 'marcel-ayme',
@@ -119,7 +119,7 @@ $projets = [
         'adresse' => 'https://www.hotel-litteraire-marcel-ayme.com/fr/',
         'lien' => 'Voir le site →',
         'statut' => 'en-ligne',
-        'filtres' => ['front'],
+        'filtres' => ['vitrine'],
     ],
 ];
 
@@ -131,10 +131,11 @@ $statuts = [
 
 $filtres_projets = [
     'tous' => 'Tous',
+    'boutique' => 'Boutiques en ligne',
+    'vitrine' => 'Sites vitrines',
+    'catalogue' => 'Catalogues de produits',
+    'application' => 'Applications sur mesure',
     'wordpress' => 'WordPress',
-    'fullstack' => 'Full stack',
-    'front' => 'Front',
-    'back' => 'Back',
 ];
 
 function adresse_image(string $fichier): string

@@ -806,8 +806,22 @@ textarea {
 }
 
 .projet-technos {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projet-techno {
+  padding: 3px 12px;
+  border: 1px solid var(--bordure-carte-bleue);
+  border-radius: var(--rayon-bouton);
+  background: color-mix(in srgb, var(--bleu) 14%, transparent);
+  color: var(--bleu-lien);
   font-size: 13px;
-  color: var(--texte-discret);
+  font-weight: 500;
 }
 
 .projet-lien {
