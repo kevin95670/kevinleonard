@@ -25,7 +25,7 @@ include 'includes/projets-donnees.php';
     <?php foreach ($projets as $projet): ?>
     <li class="projet<?= $projet['statut'] === 'bientot' ? ' projet-bientot' : '' ?>" data-filtres="<?= implode(' ', $projet['filtres']) ?>">
       <div class="projet-image">
-        <img src="/images/<?= $projet['image'] ?>" alt="Capture du site <?= $projet['nom'] ?>" width="800" height="500" loading="lazy">
+        <img src="<?= adresse_image($projet['image']) ?>" alt="Capture du site <?= $projet['nom'] ?>" width="800" height="500" loading="lazy">
         <span class="projet-statut projet-statut-<?= $projet['statut'] ?>"><?= $statuts[$projet['statut']] ?></span>
       </div>
       <div class="projet-contenu">

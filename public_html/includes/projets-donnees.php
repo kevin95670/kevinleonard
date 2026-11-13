@@ -136,3 +136,10 @@ $filtres_projets = [
     'front' => 'Front',
     'back' => 'Back',
 ];
+
+function adresse_image(string $fichier): string
+{
+    $chemin = __DIR__ . '/../images/' . $fichier;
+    $version = is_file($chemin) ? filemtime($chemin) : 1;
+    return '/images/' . $fichier . '?v=' . $version;
+}

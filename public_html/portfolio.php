@@ -217,7 +217,7 @@ $formations = [
       <?php $projet = $projets_par_cle[$cle]; ?>
       <li class="projet">
         <div class="projet-image">
-          <img src="/images/<?= e($projet['image']) ?>" alt="Capture du site <?= e($projet['nom']) ?>" width="800" height="500" loading="lazy">
+          <img src="<?= adresse_image($projet['image']) ?>" alt="Capture du site <?= e($projet['nom']) ?>" width="800" height="500" loading="lazy">
           <span class="projet-statut projet-statut-<?= e($projet['statut']) ?>"><?= e($statuts[$projet['statut']]) ?></span>
         </div>
         <div class="projet-contenu">
