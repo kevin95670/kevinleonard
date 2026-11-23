@@ -8,14 +8,15 @@ include 'includes/entete.php';
 function points_niveau(int $niveau): string
 {
     $points = '';
-    for ($point = 1; $point <= 4; $point++) {
+    for ($point = 1; $point <= 5; $point++) {
         $points .= '<span class="parcours-niveau-point' . ($point <= $niveau ? ' parcours-niveau-point-plein' : '') . '"></span>';
     }
     return $points;
 }
 
 $niveaux = [
-    4 => 'Maîtrise',
+    5 => 'Maîtrise',
+    4 => 'Confirmé',
     3 => "À l'aise",
     2 => 'Bases',
     1 => 'Notions',
@@ -95,7 +96,7 @@ $competences = [
         'ton' => 'bleu',
         'titre' => 'Back-end',
         'elements' => [
-            ['nom' => 'PHP orienté objet', 'niveau' => 4],
+            ['nom' => 'PHP orienté objet', 'niveau' => 5],
             ['nom' => 'MySQL', 'niveau' => 4],
             ['nom' => 'Symfony', 'niveau' => 3],
             ['nom' => 'Laravel', 'niveau' => 2],
@@ -105,11 +106,11 @@ $competences = [
         'ton' => 'bleu',
         'titre' => 'Front-end',
         'elements' => [
-            ['nom' => 'HTML 5 · CSS 3 · SASS', 'niveau' => 4],
+            ['nom' => 'HTML 5 · CSS 3 · SASS', 'niveau' => 5],
             ['nom' => 'Bootstrap', 'niveau' => 4],
-            ['nom' => 'JavaScript / jQuery', 'niveau' => 3],
-            ['nom' => 'Tailwind CSS', 'niveau' => 2],
-            ['nom' => 'Vue.js', 'niveau' => 2],
+            ['nom' => 'JavaScript / jQuery', 'niveau' => 4],
+            ['nom' => 'Tailwind CSS', 'niveau' => 3],
+            ['nom' => 'Vue.js', 'niveau' => 3],
             ['nom' => 'React', 'niveau' => 2],
         ],
     ],
@@ -117,8 +118,8 @@ $competences = [
         'ton' => 'violet',
         'titre' => 'CMS',
         'elements' => [
-            ['nom' => 'WordPress', 'niveau' => 3],
-            ['nom' => 'CMS sur mesure · Twig', 'niveau' => 3],
+            ['nom' => 'WordPress', 'niveau' => 4],
+            ['nom' => 'CMS sur mesure · Twig', 'niveau' => 4],
             ['nom' => 'WooCommerce', 'niveau' => 3],
             ['nom' => 'Magento', 'niveau' => 2],
         ],
@@ -128,7 +129,7 @@ $competences = [
         'titre' => 'Outils',
         'elements' => [
             ['nom' => 'Git', 'niveau' => 3],
-            ['nom' => 'Docker', 'niveau' => 2],
+            ['nom' => 'Docker', 'niveau' => 3],
             ['nom' => 'Photoshop', 'niveau' => 2],
             ['nom' => 'CI/CD (GitHub Actions)', 'niveau' => 2],
         ],
