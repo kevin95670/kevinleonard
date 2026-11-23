@@ -34,6 +34,17 @@ $projets = [
         'filtres' => ['boutique', 'application'],
     ],
     [
+        'cle' => 'collectif',
+        'nom' => 'Collectif',
+        'texte' => "Site d'événements sportifs : recherche près de chez soi, inscriptions avec places limitées, favoris, chat par événement, notifications et avis sur les organisateurs. Testé automatiquement et déployé à chaque push.",
+        'technos' => 'Laravel · React · MySQL · Docker · GitHub Actions',
+        'image' => 'collectif.webp',
+        'adresse' => 'https://collectif.kevinleonard.fr/',
+        'lien' => 'Voir le site →',
+        'statut' => 'en-ligne',
+        'filtres' => ['application'],
+    ],
+    [
         'cle' => 'petite-source',
         'nom' => 'Petite Source',
         'texte' => 'Mini-piscines et spas hors-sol. Conçu en entier, du design au code.',
