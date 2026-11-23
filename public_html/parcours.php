@@ -237,7 +237,7 @@ $qualites = [
     </ul>
     <p class="parcours-actuel">
       <span class="parcours-actuel-etiquette">En ce moment</span>
-      <span>Je me forme au CI/CD pour automatiser les tests et les déploiements, et à React.</span>
+        <span>Je viens de livrer Collectif (Laravel, React, CI/CD) et j'approfondis maintenant Vue.js avec Symfony.</span>
     </p>
   </section>
 
