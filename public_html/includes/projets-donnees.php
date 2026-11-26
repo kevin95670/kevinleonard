@@ -6,9 +6,9 @@ $projets = [
         'texte' => 'Site vitrine pour une entreprise de dépannage, réparation et construction de piscines. Mon premier site client, en cours de réalisation.',
         'technos' => 'WordPress · Elementor',
         'image' => 'dream-and-swim.webp',
-        'adresse' => '',
-        'lien' => '',
-        'statut' => 'en-cours',
+        'adresse' => 'https://dreamandswim.fr/',
+        'lien' => 'Voir le site →',
+        'statut' => 'en-ligne',
         'filtres' => ['vitrine', 'wordpress'],
     ],
     [
