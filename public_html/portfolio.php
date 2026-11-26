@@ -6,7 +6,7 @@ header('X-Robots-Tag: noindex, follow');
 $lien_malt = 'https://www.malt.fr/profile/kevinleonard';
 
 // Projets affichés, dans cet ordre (clés de includes/projets-donnees.php).
-$projets_retenus = ['petite-source', 'piscinelle', 'marcel-ayme', 'sigma','replay','collectif'];
+$projets_retenus = ['dream-and-swim','petite-source', 'piscinelle', 'marcel-ayme', 'sigma','replay','collectif'];
 
 include __DIR__ . '/includes/projets-donnees.php';
 
